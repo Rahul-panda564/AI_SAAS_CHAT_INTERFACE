@@ -1,0 +1,10 @@
+node_modules
+dist
+
+# Local notes / scratch output
+errors.txt
+errors2.txt
+errors3.txt
+
+# Local editor workspace settings
+.vscode/
