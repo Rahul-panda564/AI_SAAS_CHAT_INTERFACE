@@ -1,0 +1,18 @@
+﻿src/App.tsx(3,32): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/HeroSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/HeroSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(4,45): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/PromptEngineeringSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/PromptEngineeringSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(5,39): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/ToolCallingSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/ToolCallingSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(6,40): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/CapabilitiesSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/CapabilitiesSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(7,34): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/MemorySection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/MemorySection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(8,36): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/SecuritySection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/SecuritySection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(9,40): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/IntegrationsSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/IntegrationsSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(10,35): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/PricingSection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/PricingSection")' but required in type '{ default: ComponentType<any>; }'.
+src/App.tsx(11,31): error TS2322: Type 'Promise<typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/CTASection")>' is not assignable to type 'Promise<{ default: ComponentType<any>; }>'.
+  Property 'default' is missing in type 'typeof import("C:/PROJECTS/AI_SaaS_Chat_Interface/app/src/components/sections/CTASection")' but required in type '{ default: ComponentType<any>; }'.
