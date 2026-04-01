@@ -10,61 +10,92 @@
 ![Framer Motion](https://img.shields.io/badge/Framer-Motion-111827?style=for-the-badge&logo=framer&logoColor=0055FF)
 
 A cinematic, conversion-first SaaS frontend for an AI chat product.
-Built to feel premium, interactive, and launch-ready.
+
+[Live Demo](http://localhost:5173/) • [Features](#features) • [Architecture](#architecture) • [Quick Start](#quick-start)
 
 </div>
 
-## Why This Project Stands Out
+## Product Snapshot
 
-NexusAI is not a generic landing page.
-It combines narrative scroll choreography, real-time chat simulation, and polished UI motion to showcase an AI product with clarity and confidence.
+NexusAI is a high-impact product UI demo built to present an AI SaaS experience with modern interactions, scroll storytelling, and a production-style frontend architecture.
 
-- Story-driven page flow with pin + snap section transitions
-- Rich motion interactions with practical performance choices
-- Simulated AI chat streaming for product demonstration
-- Modular architecture for rapid customization and expansion
-- Design system foundation with reusable primitives
+| Area | What It Delivers |
+| --- | --- |
+| Storytelling | Scroll-driven section choreography with GSAP pin and snap behavior |
+| Product Feel | Rich motion and micro-interactions with Framer Motion |
+| AI UX Demo | Simulated chat streaming, stop controls, and conversational flow |
+| Scale Ready | Modular components, shared hooks, and typed domain models |
+| Visual System | Tailwind tokens + reusable Radix-based primitives |
 
 ## Preview
 
-Add screenshots or GIFs in this section once available.
-
-### Hero / Above the Fold
+Add your screenshots/GIFs here for a strong first impression on GitHub.
 
 ![Hero Screenshot](./docs/screenshots/hero.png)
-
-### Interactive Chat Demo
-
 ![Chat Screenshot](./docs/screenshots/chat.png)
-
-### Pricing + CTA
-
 ![Pricing Screenshot](./docs/screenshots/pricing.png)
 
-If these files do not exist yet, create the directory and replace with your assets:
+If needed:
 
 ```bash
 mkdir -p docs/screenshots
 ```
 
-## Feature Tour
+## Features
 
-1. Pinned Scroll Storytelling
-- GSAP ScrollTrigger drives section timing and readable snap points.
-- Navigation respects pinned and non-pinned section behavior.
+1. Scroll Narrative Engine
+- Global scroll snapping for pinned sections.
+- Mixed pinned and natural-flow sections for better pacing.
 
-2. AI Chat Experience Mock
-- Message bubbles, streaming indicators, and send/stop interactions.
-- Conversation and message state handled through reusable hooks.
+2. Interactive AI Chat Demo
+- Streaming response simulation via reusable hooks.
+- Message bubbles, typing indicators, and stop-stream action.
 
-3. Conversion-Oriented Sections
-- Capabilities, Security, Integrations, Pricing, and CTA sections are structured to support demos and marketing use cases.
+3. Conversion-Focused Layout
+- Hero, capabilities, security, integrations, pricing, and final CTA.
+- Built for product demos, portfolio use, and SaaS landing adaptation.
 
-4. Reusable UI Foundation
-- Radix-based primitives in a dedicated UI layer.
-- Easy to extend and restyle for additional product surfaces.
+4. Reusable UI Layer
+- Radix-based primitives in a dedicated `ui` directory.
+- Easy to extend with additional modules or design themes.
 
-## Stack
+## Architecture
+
+```mermaid
+flowchart TD
+  A[App.tsx] --> B[Navigation]
+  A --> C[Section Modules]
+  C --> C1[Hero]
+  C --> C2[Prompt Engineering]
+  C --> C3[Tool Calling]
+  C --> C4[Capabilities]
+  C --> C5[Memory]
+  C --> C6[Security]
+  C --> C7[Integrations]
+  C --> C8[Pricing]
+  C --> C9[CTA]
+  A --> D[GSAP ScrollTrigger]
+  C --> E[Chat Components]
+  E --> F[useChat]
+  E --> G[useStreamingText]
+```
+
+```text
+src/
+  components/
+    chat/
+    sections/
+    ui/
+    Navigation.tsx
+  hooks/
+    useChat.ts
+    useStreamingText.ts
+  types/
+    index.ts
+  App.tsx
+```
+
+## Tech Stack
 
 - React 19
 - TypeScript 5
@@ -87,53 +118,33 @@ Open `http://localhost:5173/`
 ## Scripts
 
 ```bash
-npm run dev      # Start local development server
+npm run dev      # Start dev server
 npm run build    # Type-check + production build
-npm run preview  # Preview built output locally
-npm run lint     # Run ESLint
+npm run preview  # Preview production bundle
+npm run lint     # Lint project
 ```
 
-## Architecture Snapshot
+## Recruiter Notes
 
-```text
-src/
-  components/
-    chat/          # Chat demos and interaction UIs
-    sections/      # Product storytelling sections
-    ui/            # Reusable UI primitives
-    Navigation.tsx
-  hooks/
-    useChat.ts
-    useStreamingText.ts
-  types/
-    index.ts
-  App.tsx
-```
+- Project emphasizes frontend architecture, motion design, and component system design.
+- Built with an AI-assisted workflow and manually curated implementation decisions.
+- You can review section modularity, hook design, and animation orchestration in code.
 
-## Customize for Your Brand
+## Customization
 
-- Content: update section copy in `src/components/sections/`
-- Visual system: tune tokens in `tailwind.config.js`
-- Scroll behavior: adjust orchestration in `src/App.tsx`
-- Chat demos: extend flows in `src/components/chat/` and `src/hooks/useChat.ts`
+- Update section content in `src/components/sections/`
+- Tune visual tokens in `tailwind.config.js`
+- Adjust scroll orchestration in `src/App.tsx`
+- Extend chat behaviors in `src/components/chat/` and `src/hooks/useChat.ts`
 
 ## Deployment
-
-This project is static-host friendly.
 
 ```bash
 npm run build
 ```
 
-Deploy the generated `dist/` folder to your hosting platform.
-
-## Roadmap Ideas
-
-- Connect chat to a real streaming backend
-- Add analytics and conversion tracking
-- Add automated accessibility and E2E checks
-- Add motion-reduced variants for all animated sections
+Deploy the generated `dist/` directory to static hosting.
 
 ## License
 
-No license file is currently present. Add a `LICENSE` file to define distribution and usage rights.
+This project is licensed under the MIT License. See `LICENSE` for details.
