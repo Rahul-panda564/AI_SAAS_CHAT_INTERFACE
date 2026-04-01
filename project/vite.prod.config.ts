@@ -6,7 +6,7 @@ import { inspectAttr } from 'kimi-plugin-inspect-react'
 export default defineConfig({
   base: '/AI_SAAS_CHAT_INTERFACE/',
   build: {
-    outDir: '.',
+    outDir: '..',
     emptyOutDir: false,
     assetsDir: 'assets',
     cssCodeSplit: false,
