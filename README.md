@@ -15,6 +15,25 @@ A cinematic, conversion-first AI SaaS landing page and product demo experience.
 
 </div>
 
+## Project Highlights
+
+| Highlight | What Recruiters Can Quickly Verify |
+| --- | --- |
+| End-to-end frontend system | Structured React + TypeScript architecture with reusable components and hooks |
+| Advanced motion implementation | GSAP ScrollTrigger pin/snap choreography and Framer Motion transitions |
+| Product-thinking execution | Real SaaS sections: prompt engineering, tool calling, memory, security, pricing |
+| Maintainability mindset | Modular section breakdown, shared UI primitives, typed codebase |
+| Deploy-ready workflow | Vite build pipeline and live GitHub Pages deployment |
+
+## Preview
+
+- Live website: [AI SaaS Chat Interface](https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/)
+- Hero and interactive chat: [Open section](https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/#)
+- Prompt engineering module: [Open section](https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/#product)
+- Pricing module: [Open section](https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/#pricing)
+
+Tip: For portfolio/recruiter submissions, add a 20-40 second screen capture GIF here to show the scroll narrative and transitions.
+
 ## Why This Project
 
 This project showcases a modern AI product website with a strong focus on:
@@ -127,6 +146,14 @@ npm run lint     # Lint project
 - Demonstrates practical frontend system design for a SaaS product
 - Shows production-style section modularity and animation orchestration
 - Balances visual polish with code structure and maintainability
+
+## My Role And Impact
+
+- Designed and implemented the complete frontend experience and page architecture
+- Built the motion system using GSAP ScrollTrigger and Framer Motion for narrative flow
+- Developed modular, reusable sections to keep the codebase scalable and readable
+- Implemented interactive AI product simulations (chat, prompt editor, tool cards) to mirror real-world product UX
+- Shipped a deployable build and published a live version on GitHub Pages
 
 ## Deployment
 
