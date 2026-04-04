@@ -1,4 +1,4 @@
-# NexusAI Frontend
+# AI SaaS Chat Interface
 
 <div align="center">
 
@@ -9,55 +9,50 @@
 ![GSAP](https://img.shields.io/badge/GSAP-ScrollTrigger-111827?style=for-the-badge&logo=greensock&logoColor=88CE02)
 ![Framer Motion](https://img.shields.io/badge/Framer-Motion-111827?style=for-the-badge&logo=framer&logoColor=0055FF)
 
-A cinematic, conversion-first SaaS frontend for an AI chat product.
+A cinematic, conversion-first AI SaaS landing page and product demo experience.
 
-[Live Demo](http://localhost:5173/) • [Features](#features) • [Architecture](#architecture) • [Quick Start](#quick-start)
+[Visit Website](https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/) • [Features](#features) • [Architecture](#architecture) • [Quick Start](#quick-start)
 
 </div>
 
-## Product Snapshot
+## Why This Project
 
-NexusAI is a high-impact product UI demo built to present an AI SaaS experience with modern interactions, scroll storytelling, and a production-style frontend architecture.
+This project showcases a modern AI product website with a strong focus on:
 
-| Area | What It Delivers |
-| --- | --- |
-| Storytelling | Scroll-driven section choreography with GSAP pin and snap behavior |
-| Product Feel | Rich motion and micro-interactions with Framer Motion |
-| AI UX Demo | Simulated chat streaming, stop controls, and conversational flow |
-| Scale Ready | Modular components, shared hooks, and typed domain models |
-| Visual System | Tailwind tokens + reusable Radix-based primitives |
+- Scroll storytelling and motion design
+- Product-style UX for prompt engineering and tool calling
+- Reusable component architecture for scale
+- Recruiter-friendly implementation quality and code organization
 
-## Preview
+## Live Product Sections
 
-Add your screenshots/GIFs here for a strong first impression on GitHub.
-
-![Hero Screenshot](./docs/screenshots/hero.png)
-![Chat Screenshot](./docs/screenshots/chat.png)
-![Pricing Screenshot](./docs/screenshots/pricing.png)
-
-If needed:
-
-```bash
-mkdir -p docs/screenshots
-```
+- Hero: AI platform positioning with animated chat UI
+- Prompt Engineering: visual editor simulation with token feedback
+- Tool Calling: function/tool execution cards and interaction flows
+- Capabilities: product value blocks for developers and teams
+- Memory: context persistence and long-thread handling UX
+- Security: enterprise trust messaging and controls
+- Integrations: ecosystem connectivity section
+- Pricing: SaaS tier presentation
+- CTA + Footer: conversion-focused final section
 
 ## Features
 
 1. Scroll Narrative Engine
-- Global scroll snapping for pinned sections.
-- Mixed pinned and natural-flow sections for better pacing.
+- Pinned sections powered by GSAP ScrollTrigger
+- Custom global snap behavior across pinned ranges
 
 2. Interactive AI Chat Demo
-- Streaming response simulation via reusable hooks.
-- Message bubbles, typing indicators, and stop-stream action.
+- Streaming-like messaging UX
+- Controlled response flow and stop action support
 
-3. Conversion-Focused Layout
-- Hero, capabilities, security, integrations, pricing, and final CTA.
-- Built for product demos, portfolio use, and SaaS landing adaptation.
+3. Modular Frontend Architecture
+- Lazy-loaded sections for cleaner composition
+- Reusable hooks for chat and streaming behaviors
 
-4. Reusable UI Layer
-- Radix-based primitives in a dedicated `ui` directory.
-- Easy to extend with additional modules or design themes.
+4. Reusable UI System
+- Radix-based component primitives
+- Shared utility and type layers for maintainability
 
 ## Architecture
 
@@ -81,18 +76,19 @@ flowchart TD
 ```
 
 ```text
-src/
-  components/
-    chat/
-    sections/
-    ui/
-    Navigation.tsx
-  hooks/
-    useChat.ts
-    useStreamingText.ts
-  types/
-    index.ts
-  App.tsx
+project/
+  src/
+    components/
+      chat/
+      sections/
+      ui/
+      Navigation.tsx
+    hooks/
+      useChat.ts
+      useStreamingText.ts
+    types/
+      index.ts
+    App.tsx
 ```
 
 ## Tech Stack
@@ -109,15 +105,17 @@ src/
 ## Quick Start
 
 ```bash
+cd project
 npm install
 npm run dev
 ```
 
-Open `http://localhost:5173/`
+Open http://localhost:5173/
 
 ## Scripts
 
 ```bash
+cd project
 npm run dev      # Start dev server
 npm run build    # Type-check + production build
 npm run preview  # Preview production bundle
@@ -126,25 +124,25 @@ npm run lint     # Lint project
 
 ## Recruiter Notes
 
-- Project emphasizes frontend architecture, motion design, and component system design.
-- Built with an AI-assisted workflow and manually curated implementation decisions.
-- You can review section modularity, hook design, and animation orchestration in code.
-
-## Customization
-
-- Update section content in `src/components/sections/`
-- Tune visual tokens in `tailwind.config.js`
-- Adjust scroll orchestration in `src/App.tsx`
-- Extend chat behaviors in `src/components/chat/` and `src/hooks/useChat.ts`
+- Demonstrates practical frontend system design for a SaaS product
+- Shows production-style section modularity and animation orchestration
+- Balances visual polish with code structure and maintainability
 
 ## Deployment
 
+The live version is currently deployed via GitHub Pages:
+
+- https://rahul-panda564.github.io/AI_SAAS_CHAT_INTERFACE/
+
+To build locally for deployment:
+
 ```bash
+cd project
 npm run build
 ```
 
-Deploy the generated `dist/` directory to static hosting.
+Deploy the generated project/dist directory to static hosting.
 
 ## License
 
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the MIT License. See LICENSE for details.
